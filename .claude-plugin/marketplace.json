@@ -1,0 +1,31 @@
+{
+  "name": "claude-plugins",
+  "owner": {
+    "name": "Christopher Campbell",
+    "url": "https://github.com/christophercampbell"
+  },
+  "metadata": {
+    "description": "A collection of plugins for Claude Code",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "dev",
+      "source": "./dev",
+      "description": "Pragmatic engineering principles: YAGNI, SOLID, KISS, DRY, fail fast, and more",
+      "version": "1.0.0",
+      "license": "MIT",
+      "keywords": ["engineering", "principles", "yagni", "solid", "kiss", "dry"],
+      "category": "development"
+    },
+    {
+      "name": "claude",
+      "source": "./claude",
+      "description": "Utility commands for Claude Code itself",
+      "version": "1.0.0",
+      "license": "MIT",
+      "keywords": ["utility", "skills", "optimize"],
+      "category": "utilities"
+    }
+  ]
+}
