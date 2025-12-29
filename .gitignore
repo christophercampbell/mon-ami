@@ -1,0 +1,13 @@
+.DS_Store
+
+# IDEs
+.idea
+.vscode
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings
+*.sublime-project
+*.sublime-workspace
