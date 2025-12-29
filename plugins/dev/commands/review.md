@@ -1,6 +1,10 @@
+---
+description: Review code against development principles
+argument-hint: [file-or-directory]
+---
 Review the current implementation against development principles.
 
-First, invoke the `development-principles:development-principles` skill to load the principles.
+First, invoke the `dev:development-principles` skill to load the principles.
 
 Then focus on the most recently modified files or the area of code the user is currently working on. Evaluate against:
 

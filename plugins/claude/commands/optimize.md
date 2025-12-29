@@ -1,3 +1,6 @@
+---
+description: Audit and clean up Claude Code plugin installation
+---
 Audit and clean up Claude Code plugin installation.
 
 ## Locations

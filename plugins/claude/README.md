@@ -12,7 +12,6 @@ Utility commands for Claude Code.
 /plugin install claude@prompt-plugins
 ```
 
-
 ## Commands
 
 **`/claude:skills`** - Lists all available skills in a table format.

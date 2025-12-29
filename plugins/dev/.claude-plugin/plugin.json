@@ -1,5 +1,12 @@
 {
   "name": "dev",
+  "version": "1.0.0",
   "description": "Pragmatic engineering principles: YAGNI, SOLID, KISS, DRY, fail fast, and more",
-  "version": "1.0.0"
+  "author": {
+    "name": "Christopher Campbell",
+    "url": "https://github.com/christophercampbell"
+  },
+  "repository": "https://github.com/christophercampbell/prompt-plugins",
+  "license": "MIT",
+  "keywords": ["engineering", "principles", "yagni", "solid", "kiss", "dry"]
 }
