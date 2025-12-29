@@ -5,8 +5,8 @@ Pragmatic engineering principles for Claude Code.
 ## Installation
 
 ```bash
-/plugin marketplace add christophercampbell/claude-plugins
-/plugin install dev@claude-plugins
+/plugin marketplace add christophercampbell/prompt-plugins
+/plugin install dev@prompt-plugins
 ```
 
 ## Skill

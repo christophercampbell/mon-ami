@@ -5,8 +5,8 @@ Utility commands for Claude Code.
 ## Installation
 
 ```bash
-/plugin marketplace add christophercampbell/claude-plugins
-/plugin install claude@claude-plugins
+/plugin marketplace add christophercampbell/prompt-plugins
+/plugin install claude@prompt-plugins
 ```
 
 ## Commands

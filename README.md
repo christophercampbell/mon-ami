@@ -32,9 +32,9 @@ Utility commands for Claude Code itself.
 Add the marketplace, then install plugins:
 
 ```bash
-/plugin marketplace add christophercampbell/claude-plugins
-/plugin install dev@claude-plugins
-/plugin install claude@claude-plugins
+/plugin marketplace add christophercampbell/prompt-plugins
+/plugin install dev@prompt-plugins
+/plugin install claude@prompt-plugins
 ```
 
 Or use `/plugin` to browse and install interactively.
