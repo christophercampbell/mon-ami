@@ -4,10 +4,14 @@ Utility commands for Claude Code.
 
 ## Installation
 
-```bash
+```shell
 /plugin marketplace add christophercampbell/prompt-plugins
+```
+
+```shell
 /plugin install claude@prompt-plugins
 ```
+
 
 ## Commands
 

@@ -4,8 +4,11 @@ Pragmatic engineering principles for Claude Code.
 
 ## Installation
 
-```bash
+```shell
 /plugin marketplace add christophercampbell/prompt-plugins
+```
+
+```shell
 /plugin install dev@prompt-plugins
 ```
 
