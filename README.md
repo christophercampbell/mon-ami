@@ -29,23 +29,15 @@ Utility commands for Claude Code itself.
 
 ## Installation
 
-In Claude Code:
+Add the marketplace, then install plugins:
 
 ```bash
-/install-plugin github:christophercampbell/claude-plugins/dev
-/install-plugin github:christophercampbell/claude-plugins/claude
+/plugin marketplace add christophercampbell/claude-plugins
+/plugin install dev@claude-plugins
+/plugin install claude@claude-plugins
 ```
 
-Or add to `~/.claude/settings.json`:
-
-```json
-{
-  "enabledPlugins": [
-    "github:christophercampbell/claude-plugins/dev",
-    "github:christophercampbell/claude-plugins/claude"
-  ]
-}
-```
+Or use `/plugin` to browse and install interactively.
 
 ## License
 
