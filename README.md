@@ -40,7 +40,7 @@ Add the marketplace, then install plugins:
 ```
 
 ```shell
-/plugin install claude@prompt-plugins
+/plugin install sys@prompt-plugins
 ```
 
 Or use `/plugin` to browse and install interactively.

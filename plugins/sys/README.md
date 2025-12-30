@@ -16,7 +16,7 @@ Utility commands for Claude Code.
 
 **`/sys:skills`** - Lists all available skills in a table format.
 
-**`/sys:optimize`** - Audits and cleans up plugin installation.
+**`/sys:prune`** - Audits and cleans up plugin installation.
 
 Checks:
 - Orphaned cache (in cache but not enabled)
