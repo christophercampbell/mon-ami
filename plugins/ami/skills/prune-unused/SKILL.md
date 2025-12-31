@@ -1,7 +1,7 @@
 ---
 name: prune-unused
 description: Audit and clean up Claude Code plugin installation
-allowed-tools: Read(~/.claude/**), Edit(~/.claude/**), Write(~/.claude/**), Bash(rm -rf ~/.claude/plugins/cache/*), Bash(rmdir ~/.claude/plugins/cache/*), Bash(ls:*)
+allowed-tools: Read, Edit, Write, Bash(rm -rf:*), Bash(rmdir:*), Bash(find:*), Glob
 ---
 
 <!-- Why a skill? The allowed-tools grants pre-approved access to ~/.claude files, so cleanup can execute without prompting for every read/write/delete. -->
