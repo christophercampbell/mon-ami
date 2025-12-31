@@ -1,4 +1,4 @@
-# Mon-Ami
+# Mon-Ami <img src="icon.svg" alt="Mon-Ami Icon" width="80" align="right"/>
 
 mon-ami is my personal toolkit for working with Claude Code — a growing set of plugins, commands, and skills I use to augment coding, reasoning, and agent workflows.
 

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#2D3748" stroke="#4A5568" stroke-width="2"/>
+
+  <!-- Two friendly figures representing "mon" and "ami" -->
+  <!-- Left figure (mon) - development principles -->
+  <g id="mon">
+    <circle cx="70" cy="80" r="18" fill="#63B3ED"/>
+    <path d="M 52 100 Q 70 95 88 100 L 88 130 Q 70 135 52 130 Z" fill="#63B3ED"/>
+    <!-- Code bracket symbol -->
+    <text x="62" y="88" font-family="monospace" font-size="16" fill="#2D3748" font-weight="bold">{</text>
+  </g>
+
+  <!-- Right figure (ami) - utility/helper -->
+  <g id="ami">
+    <circle cx="130" cy="80" r="18" fill="#F6AD55"/>
+    <path d="M 112 100 Q 130 95 148 100 L 148 130 Q 130 135 112 130 Z" fill="#F6AD55"/>
+    <!-- Tool/wrench symbol -->
+    <text x="121" y="88" font-family="monospace" font-size="16" fill="#2D3748" font-weight="bold">⚙</text>
+  </g>
+
+  <!-- Handshake connection -->
+  <g id="handshake">
+    <!-- Left arm extending right -->
+    <path d="M 88 115 L 95 115" stroke="#63B3ED" stroke-width="4" stroke-linecap="round"/>
+    <!-- Right arm extending left -->
+    <path d="M 112 115 L 105 115" stroke="#F6AD55" stroke-width="4" stroke-linecap="round"/>
+    <!-- Clasped hands in the middle -->
+    <ellipse cx="100" cy="115" rx="8" ry="6" fill="#68D391" stroke="#48BB78" stroke-width="1.5"/>
+    <!-- Hand details -->
+    <path d="M 96 113 L 96 117 M 100 112 L 100 118 M 104 113 L 104 117" stroke="#2D3748" stroke-width="1" opacity="0.3"/>
+  </g>
+
+  <!-- Project name -->
+  <text x="100" y="165" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#E2E8F0" text-anchor="middle" font-weight="600">mon-ami</text>
+
+  <!-- Small Claude Code reference -->
+  <circle cx="100" cy="180" r="3" fill="#9F7AEA"/>
+  <circle cx="108" cy="180" r="3" fill="#9F7AEA"/>
+  <circle cx="92" cy="180" r="3" fill="#9F7AEA"/>
+</svg>
