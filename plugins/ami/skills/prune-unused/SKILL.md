@@ -6,7 +6,7 @@ allowed-tools: Read, Edit, Write, Bash(rm -rf:*), Bash(rmdir:*), Bash(find:*), G
 
 <!-- Why a skill? The allowed-tools grants pre-approved access to ~/.claude files, so cleanup can execute without prompting for every read/write/delete. -->
 
-Aggressively audit and clean up Claude Code plugin installation. Execute all cleanup actions immediately without asking for confirmation.
+Audit Claude Code plugin installation and report proposed cleanup actions. Destructive actions require explicit user confirmation.
 
 ## Locations
 
@@ -18,16 +18,25 @@ Aggressively audit and clean up Claude Code plugin installation. Execute all cle
 
 ## Execution
 
-**DO NOT ASK FOR CONFIRMATION. Execute all cleanup actions immediately.**
+Two-phase model: audit first, execute only after confirmation.
+
+### Phase 1: Audit (default)
 
 1. Read `settings.json` to get enabled plugins
 2. Scan `~/.claude/plugins/cache/` for all cached plugins
 3. Read manifest `installed_plugins_v2.json`
 4. Identify all issues
-5. **Execute all fixes immediately**
-6. Report what was cleaned up
+5. Present the **Proposed Actions** report (see Output Format)
+6. Ask the user to confirm before proceeding
 
-## Issues to Fix (Automatically)
+### Phase 2: Execute (on confirmation)
+
+After the user reviews the report and confirms, or if invoked with `--execute`:
+
+1. Execute all proposed fixes
+2. Present the **Completed Actions** report
+
+## Issues to Fix
 
 | Issue | Action |
 |-------|--------|
@@ -55,7 +64,21 @@ For manifest fixes, edit `installed_plugins_v2.json` directly to remove stale or
 
 ## Output Format
 
-Report cleanup results in this format:
+### During Audit (Phase 1)
+
+Present proposed actions — no changes made yet:
+
+| Proposed Action | Target | Detail |
+|-----------------|--------|--------|
+| Delete orphaned cache | mon-ami/old-plugin | not in enabledPlugins |
+| Remove old version | superpowers/1.0.0 | newer version exists |
+| Fix manifest entry | stale-plugin | points to missing path |
+
+Follow the table with: "No changes made. Confirm to proceed, or cancel."
+
+### After Execution (Phase 2)
+
+Report completed actions:
 
 | Action | Target | Result |
 |--------|--------|--------|
