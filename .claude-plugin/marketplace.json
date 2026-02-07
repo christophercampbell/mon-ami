@@ -6,14 +6,14 @@
   },
   "metadata": {
     "description": "A collection of plugins for Claude Code",
-    "version": "1.0.0"
+    "version": "1.1.0"
   },
   "plugins": [
     {
       "name": "mon",
       "source": "./plugins/mon",
       "description": "Pragmatic engineering principles: YAGNI, SOLID, KISS, DRY, fail fast, and more",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "license": "MIT",
       "keywords": ["engineering", "principles", "yagni", "solid", "kiss", "dry"],
       "category": "development"
@@ -22,7 +22,7 @@
       "name": "ami",
       "source": "./plugins/ami",
       "description": "Utility commands for Claude Code itself",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "license": "MIT",
       "keywords": ["utility", "skills", "prune"],
       "category": "utilities"
