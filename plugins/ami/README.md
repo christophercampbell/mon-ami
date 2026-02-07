@@ -1,6 +1,6 @@
 # ami
 
-Utility commands and skills for Claude Code.
+(Friend) Claude's utility commands and skill (for Me).
 
 ## Installation
 

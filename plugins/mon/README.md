@@ -1,6 +1,6 @@
 # mon
 
-Pragmatic engineering principles for Claude Code.
+(My) Pragmatic engineering principles for Claude (Friend).
 
 ## Installation
 
