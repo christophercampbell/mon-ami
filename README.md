@@ -24,9 +24,9 @@ Everything here is shaped by day-to-day use, focusing on clarity, reuse, and com
 
 Utility commands and skills for Claude Code itself, **my friend**.
 
-**Skill:** `ami:confidence-check`
-- Pre-implementation confidence assessment (≥90% required)
-- Verifies: no duplicates, architecture compliance, official docs, OSS references, root cause
+**Skills:**
+- `ami:confidence-check` - Pre-implementation confidence assessment (≥90% required); verifies no duplicates, architecture compliance, official docs, OSS references, root cause
+- `ami:restore-mcp` - Restore MCP server connections when Claude loses them between projects
 
 **Command:** `/ami:skills`
 - Lists all available skills in a table format

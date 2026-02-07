@@ -23,6 +23,10 @@ Use before starting any implementation to verify:
 - Working OSS implementations found
 - Root cause properly identified
 
+**`ami:restore-mcp`** - Restore MCP server connections when Claude loses them between projects.
+
+Re-registers: context7, sequential-thinking, circle, atlassian, tavily. Requires `TAVILY_API_KEY` env var.
+
 ## Commands
 
 **`/ami:skills`** - Lists all available skills in a table format.
