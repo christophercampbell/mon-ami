@@ -15,17 +15,27 @@ fi
 
 echo "Restoring MCP servers..."
 
+add_mcp() {
+  local name="$1"
+  shift
+  if claude mcp add "$name" "$@" 2>/dev/null; then
+    echo "  Added $name"
+  else
+    echo "  $name already configured, skipping"
+  fi
+}
+
 if [ -n "${CONTEXT7_API_KEY:-}" ]; then
-  claude mcp add context7 -e CONTEXT7_API_KEY="$CONTEXT7_API_KEY" -- npx -y @upstash/context7-mcp
+  add_mcp context7 -e CONTEXT7_API_KEY="$CONTEXT7_API_KEY" -- npx -y @upstash/context7-mcp
 else
-  claude mcp add context7 -- npx -y @upstash/context7-mcp
+  add_mcp context7 -- npx -y @upstash/context7-mcp
 fi
-claude mcp add sequential-thinking -- npx -y @modelcontextprotocol/server-sequential-thinking
-claude mcp add circle --transport http https://codegenerator-staging.circle.com/api/mcp
-claude mcp add atlassian --transport http https://mcp.atlassian.com/v1/mcp
+add_mcp sequential-thinking -- npx -y @modelcontextprotocol/server-sequential-thinking
+add_mcp circle --transport http https://codegenerator-staging.circle.com/api/mcp
+add_mcp atlassian --transport http https://mcp.atlassian.com/v1/mcp
 
 if [ -n "${TAVILY_API_KEY:-}" ]; then
-  claude mcp add tavily --transport http --scope user https://mcp.tavily.com/mcp --header "Authorization: Bearer $TAVILY_API_KEY"
+  add_mcp tavily --transport http --scope user https://mcp.tavily.com/mcp --header "Authorization: Bearer $TAVILY_API_KEY"
 else
   echo "Skipping tavily (TAVILY_API_KEY not set)"
 fi
