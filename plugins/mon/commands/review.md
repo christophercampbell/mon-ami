@@ -4,7 +4,7 @@ argument-hint: [file-or-directory]
 ---
 Review the current implementation against development principles.
 
-First, invoke the `coder:development-principles` skill to load the principles.
+First, invoke the `mon:development-principles` skill to load the principles.
 
 Then focus on the most recently modified files or the area of code the user is currently working on. Evaluate against:
 

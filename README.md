@@ -14,9 +14,11 @@ Everything here is shaped by day-to-day use, focusing on clarity, reuse, and com
 - Invoke when designing, implementing, or reviewing code
 - Covers: YAGNI, Composability, SOLID, DRY, KISS, Separation of Concerns, Fail Fast, Error Handling, Testing, Performance, Security, Code Review, Refactoring, Problem-Solving, Communication Style, PR Authoring
 
-**Command:** `/mon:review`
-- Reviews recent code changes against the principles
-- Reports findings with file paths and line numbers
+**Commands:**
+- `/mon:review` - Reviews recent code changes against the principles; reports findings with file paths and line numbers
+- `/mon:improve` - Systematic code quality, performance, and maintainability improvements
+- `/mon:research` - Deep web research with adaptive planning and evidence-based synthesis
+- `/mon:business-panel` - Multi-expert business analysis using renowned thought leader frameworks
 
 ### ami
 

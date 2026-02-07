@@ -23,7 +23,7 @@ Covers:
 - Code Review, Refactoring, Problem-Solving
 - Communication Style, PR Authoring
 
-## Command
+## Commands
 
 **`/mon:review`** - Reviews recent code changes against the principles.
 
@@ -36,3 +36,9 @@ Evaluates:
 6. Testing - Testing behavior, not implementation?
 
 Reports findings with file paths and line numbers. Distinguishes "must fix" from "nice to have".
+
+**`/mon:improve`** - Systematic code quality, performance, and maintainability improvements.
+
+**`/mon:research`** - Deep web research with adaptive planning and evidence-based synthesis.
+
+**`/mon:business-panel`** - Multi-expert business analysis using frameworks from Porter, Christensen, Drucker, and others.

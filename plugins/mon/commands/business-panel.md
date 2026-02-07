@@ -1,14 +1,9 @@
-# /business-panel - Business Panel Analysis System
+---
+description: Multi-expert business analysis with adaptive interaction modes
+argument-hint: [document_path_or_content]
+---
 
-```yaml
----
-command: "/business-panel"
-category: "Analysis & Strategic Planning"  
-purpose: "Multi-expert business analysis with adaptive interaction modes"
-wave-enabled: true
-performance-profile: "complex"
----
-```
+# /business-panel - Business Panel Analysis System
 
 ## Overview
 
