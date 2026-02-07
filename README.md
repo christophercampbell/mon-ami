@@ -37,21 +37,30 @@ Utility commands and skills for Claude Code itself, **my friend**.
 
 ## Installation
 
-Add the marketplace, then install plugins:
+Add the marketplace, then install each plugin:
 
 ```shell
 /plugin marketplace add christophercampbell/mon-ami
-```
-
-```shell
 /plugin install mon@mon-ami
-```
-
-```shell
 /plugin install ami@mon-ami
 ```
 
 Or use `/plugin` to browse and install interactively.
+
+### Updating
+
+To pick up new changes, remove and re-add the marketplace, then reinstall:
+
+```shell
+/plugin marketplace remove mon-ami
+/plugin marketplace add christophercampbell/mon-ami
+/plugin install mon@mon-ami
+/plugin install ami@mon-ami
+```
+
+## Development
+
+When making changes to plugins, bump the `version` in both the plugin's `.claude-plugin/plugin.json` and the marketplace `.claude-plugin/marketplace.json` before committing. Claude Code uses the version to detect updates — without a bump, reinstalls may serve stale content.
 
 ## License
 
