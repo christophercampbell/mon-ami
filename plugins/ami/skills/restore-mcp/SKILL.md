@@ -36,4 +36,20 @@ claude mcp list
 
 - `TAVILY_API_KEY` environment variable must be set for the Tavily MCP server
 - `CONTEXT7_API_KEY` environment variable must be set for authenticated Context7 access (works without it, but rate-limited)
+- `SONARQUBE_TOKEN` environment variable must be set for SonarQube MCP server (generate at https://sonarqube.circle.com/account/security)
 - `npx` must be available (Node.js installed)
+- Docker must be running (for SonarQube)
+
+## Servers Registered
+
+| Server | Transport | Source |
+|--------|-----------|--------|
+| context7 | stdio (npx) | @upstash/context7-mcp |
+| sequential-thinking | stdio (npx) | @modelcontextprotocol/server-sequential-thinking |
+| circle | HTTP | codegenerator-staging.circle.com |
+| glean_default | HTTP | circle-be.glean.com |
+| atlassian | HTTP | mcp.atlassian.com |
+| datadog | HTTP | mcp.datadoghq.com |
+| figma | HTTP | mcp.figma.com |
+| sonarqube | stdio (Docker) | mcp/sonarqube (requires SONARQUBE_TOKEN) |
+| tavily | HTTP | mcp.tavily.com (requires TAVILY_API_KEY) |
