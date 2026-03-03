@@ -1,6 +1,6 @@
 {
   "name": "mon",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Pragmatic engineering principles: YAGNI, SOLID, KISS, DRY, fail fast, and more",
   "author": {
     "name": "Christopher Campbell",
@@ -8,5 +8,12 @@
   },
   "repository": "https://github.com/christophercampbell/mon-ami",
   "license": "MIT",
-  "keywords": ["engineering", "principles", "yagni", "solid", "kiss", "dry"]
+  "keywords": [
+    "engineering",
+    "principles",
+    "yagni",
+    "solid",
+    "kiss",
+    "dry"
+  ]
 }

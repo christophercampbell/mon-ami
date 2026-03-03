@@ -1,6 +1,6 @@
 {
   "name": "ami",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Utility commands for Claude Code itself",
   "author": {
     "name": "Christopher Campbell",
@@ -8,5 +8,10 @@
   },
   "repository": "https://github.com/christophercampbell/mon-ami",
   "license": "MIT",
-  "keywords": ["utility", "skills", "prune", "cleanup"]
+  "keywords": [
+    "utility",
+    "skills",
+    "prune",
+    "cleanup"
+  ]
 }
